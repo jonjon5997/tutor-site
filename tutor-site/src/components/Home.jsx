@@ -7,7 +7,7 @@ const Home = () => {
     <>
       <header className="header">
         <section className="flex">
-          <Link to="/" className="logo">
+          <Link to="/home" className="logo">
             Educa.
           </Link>
 
@@ -63,7 +63,7 @@ const Home = () => {
         </div>
 
         <nav className="navbar">
-          <Link to="/">
+          <Link to="/home">
             <i className="fas fa-home"></i>
             <span>home</span>
           </Link>
