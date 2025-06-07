@@ -17,7 +17,7 @@ import {
 const Header = () => (
   <header className="header">
     <section className="flex">
-      <a href="home.html" className="logo">
+      <a href="/home" className="logo">
         Educa.
       </a>
 
@@ -53,14 +53,14 @@ const Header = () => (
         <img src="images/pic-1.jpg" className="image" alt="" />
         <h3 className="name">shaikh anas</h3>
         <p className="role">studen</p>
-        <a href="profile.html" className="btn">
+        <a href="/profile" className="btn">
           view profile
         </a>
         <div className="flex-btn">
-          <a href="login.html" className="option-btn">
+          <a href="/login" className="option-btn">
             login
           </a>
-          <a href="register.html" className="option-btn">
+          <a href="/register" className="option-btn">
             register
           </a>
         </div>
@@ -79,29 +79,29 @@ const Sidebar = () => (
       <img src="images/pic-1.jpg" className="image" alt="" />
       <h3 className="name">shaikh anas</h3>
       <p className="role">studen</p>
-      <a href="profile.html" className="btn">
+      <a href="/profile" className="btn">
         view profile
       </a>
     </div>
 
     <nav className="navbar">
-      <a href="home.html">
+      <a href="/home">
         <FontAwesomeIcon icon={faHome} />
         <span>home</span>
       </a>
-      <a href="about.html">
+      <a href="/about">
         <FontAwesomeIcon icon={faQuestion} />
         <span>about</span>
       </a>
-      <a href="courses.html">
+      <a href="/courses">
         <FontAwesomeIcon icon={faGraduationCap} />
         <span>courses</span>
       </a>
-      <a href="teachers.html">
+      <a href="/teachers">
         <FontAwesomeIcon icon={faChalkboardUser} />
         <span>teachers</span>
       </a>
-      <a href="contact.html">
+      <a href="/contact">
         <FontAwesomeIcon icon={faHeadset} />
         <span>contact us</span>
       </a>

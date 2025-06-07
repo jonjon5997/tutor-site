@@ -154,7 +154,7 @@ const Contact = () => {
           <div className="box">
             <i className="fas fa-map-marker-alt"></i>
             <h3>office address</h3>
-            <a href="#">
+            <a href="/contact">
               flat no. 1, a-1 building, jogeshwari, mumbai, india - 400104
             </a>
           </div>
