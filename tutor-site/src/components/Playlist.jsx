@@ -7,7 +7,7 @@ const Playlist = () => {
       <header className="header">
         <section className="flex">
           <a href="/home" className="logo">
-            Educa.
+            Education
           </a>
 
           <form action="/search" method="post" className="search-form">

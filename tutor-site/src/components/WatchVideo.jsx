@@ -9,7 +9,7 @@ function WatchVideo() {
       <header className="header">
         <section className="flex">
           <Link to="/home" className="logo">
-            Educa.
+            Education
           </Link>
 
           <form action="/search" method="post" className="search-form">

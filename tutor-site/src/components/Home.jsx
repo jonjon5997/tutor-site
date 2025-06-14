@@ -8,7 +8,7 @@ const Home = () => {
       <header className="header">
         <section className="flex">
           <Link to="/home" className="logo">
-            Educa.
+            Education
           </Link>
 
           <form action="search.html" method="post" className="search-form">

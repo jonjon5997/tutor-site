@@ -18,7 +18,7 @@ const Header = () => (
   <header className="header">
     <section className="flex">
       <a href="/home" className="logo">
-        Educa.
+        Education
       </a>
 
       <form action="search.html" method="post" className="search-form">

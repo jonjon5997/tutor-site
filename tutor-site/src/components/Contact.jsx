@@ -1,5 +1,5 @@
 import React from "react";
-// import "./style.css"; // Make sure this path is correct in your project
+import "../styles/Contact.css"; // Make sure this path is correct in your project
 
 const Contact = () => {
   const handleFormSubmit = (e) => {
@@ -13,7 +13,7 @@ const Contact = () => {
       <header className="header">
         <section className="flex">
           <a href="/home" className="logo">
-            Educa.
+            Education
           </a>
 
           <form action="/search" method="post" className="search-form">
