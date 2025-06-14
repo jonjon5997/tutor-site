@@ -10,6 +10,7 @@ import Teachers from "./components/Teachers";
 import Profile from "./components/Profile";
 import { Navigate } from "react-router-dom";
 import Register from "./components/Register";
+import Update from "./components/Update";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path="/teachers" element={<Teachers />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/update" element={<Update />} />
       </Routes>
     </Router>
   );
