@@ -11,6 +11,8 @@ import Profile from "./components/Profile";
 import { Navigate } from "react-router-dom";
 import Register from "./components/Register";
 import Update from "./components/Update";
+import WatchVideo from "./components/WatchVideo";
+import Playlist from "./components/Playlist";
 
 function App() {
   return (
@@ -27,6 +29,8 @@ function App() {
         <Route path="/profile" element={<Profile />} />
         <Route path="/register" element={<Register />} />
         <Route path="/update" element={<Update />} />
+        <Route path="/watch-video" element={<WatchVideo />} />
+        <Route path="/playlist" element={<Playlist />} />
       </Routes>
     </Router>
   );
