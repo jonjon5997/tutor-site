@@ -8,13 +8,15 @@ import Courses from "./components/Courses";
 import Login from "./components/Login";
 import Teachers from "./components/Teachers";
 import Profile from "./components/Profile";
-// import { Navigate } from "react-router-dom";
+import { Navigate } from "react-router-dom";
+import Register from "./components/Register";
 
 function App() {
   return (
     <Router>
       <Routes>
         {/* <Route path="/home" element={<Navigate to="/home" />} /> */}
+        <Route path="/" element={<Navigate to="/home" replace />} />
         <Route path="/home" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
@@ -22,6 +24,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/teachers" element={<Teachers />} />
         <Route path="/profile" element={<Profile />} />
+        <Route path="/register" element={<Register />} />
       </Routes>
     </Router>
   );
