@@ -1,0 +1,122 @@
+.courses {
+  padding: 2rem;
+  min-height: 100vh;
+  background-color: #f9f9f9;
+  color: #333;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.courses .heading {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.box {
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
+  padding: 1.5rem;
+  transition: transform 0.2s ease, background-color 0.3s;
+}
+
+.box:hover {
+  transform: translateY(-5px);
+}
+
+.tutor {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.tutor img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 1rem;
+}
+
+.tutor .info h3 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.tutor .info span {
+  font-size: 0.875rem;
+  color: #888;
+}
+
+.thumb {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.thumb img {
+  width: 100%;
+  border-radius: 0.5rem;
+  object-fit: cover;
+}
+
+.thumb span {
+  position: absolute;
+  bottom: 0.5rem;
+  right: 0.5rem;
+  background-color: #ff6600;
+  color: #fff;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+}
+
+.title {
+  font-size: 1.25rem;
+  margin: 0.5rem 0 1rem;
+}
+
+.inline-btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #ff6600;
+  color: white;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.inline-btn:hover {
+  background-color: #e65c00;
+}
+
+/* DARK MODE SUPPORT */
+body.dark .courses {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+body.dark .box {
+  background-color: #1e1e1e;
+  box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.05);
+}
+
+body.dark .tutor .info span {
+  color: #bbb;
+}
+
+body.dark .inline-btn {
+  background-color: #ff6600;
+  color: #fff;
+}
+
+body.dark .inline-btn:hover {
+  background-color: #cc5200;
+}

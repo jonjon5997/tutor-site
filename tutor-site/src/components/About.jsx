@@ -1,7 +1,9 @@
 import React from "react";
 import "../styles/About.css";
+import { useSidebar } from "../context/SidebarContext"; // ⬅️ import hook
 
 const About = () => {
+  const { isSidebarOpen, closeSidebar, openSidebar } = useSidebar(); // ⬅️ use it
   return (
     <>
       <header className="header">
@@ -20,7 +22,11 @@ const About = () => {
             <button type="submit" className="fas fa-search"></button>
           </form>
           <div className="icons">
-            <div id="menu-btn" className="fas fa-bars"></div>
+            <div
+              id="menu-btn"
+              className="fas fa-bars"
+              onClick={openSidebar}
+            ></div>
             <div id="search-btn" className="fas fa-search"></div>
             <div id="user-btn" className="fas fa-user"></div>
             <div id="toggle-btn" className="fas fa-sun"></div>
@@ -44,8 +50,8 @@ const About = () => {
         </section>
       </header>
 
-      <div className="side-bar">
-        <div id="close-btn">
+      <div className={`side-bar ${!isSidebarOpen ? "closed" : ""}`}>
+        <div id="close-btn" onClick={closeSidebar}>
           <i className="fas fa-times"></i>
         </div>
         <div className="profile">

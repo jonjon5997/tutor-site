@@ -1,0 +1,134 @@
+/* Home Page Styles - Light & Inviting Theme */
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7f9fc;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.header {
+  background-color: #e3f2fd;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header .flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 1.8rem;
+  color: #1976d2;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.search-form input {
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-right: 0.5rem;
+}
+
+.search-form button {
+  background-color: #90caf9;
+  border: none;
+  padding: 0.5rem 0.9rem;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.icons .fas {
+  font-size: 1.3rem;
+  margin: 0 0.5rem;
+  color: #555;
+  cursor: pointer;
+}
+
+.profile {
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.profile .image {
+  width: 60px;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+}
+
+.profile .name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0.2rem 0;
+}
+
+.profile .role {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.btn,
+.option-btn {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  margin: 0.3rem;
+  background-color: #64b5f6;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover,
+.option-btn:hover {
+  background-color: #42a5f5;
+}
+
+.side-bar {
+  width: 250px;
+  background-color: #d4a9a9;
+  transition: transform 0.3s ease;
+  transform: translateX(0);
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  z-index: 1000;
+}
+
+.side-bar.closed {
+  transform: translateX(-100%);
+}
+
+#close-btn {
+  text-align: right;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.navbar a {
+  display: flex;
+  align-items: center;
+  padding: 0.8rem 0;
+  color: #1976d2;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #0d47a1;
+}
+
+.navbar i {
+  margin-right: 0.8rem;
+}

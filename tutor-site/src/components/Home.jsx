@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-// import "./style.css";
+import { useSidebar } from "../context/SidebarContext"; // ⬅️ import hook
+import "../styles/Home.css";
 
 const Home = () => {
+  const { isSidebarOpen, closeSidebar, openSidebar } = useSidebar(); // ⬅️ use it
+
   return (
     <>
       <header className="header">
@@ -23,7 +26,11 @@ const Home = () => {
           </form>
 
           <div className="icons">
-            <div id="menu-btn" className="fas fa-bars"></div>
+            <div
+              id="menu-btn"
+              className="fas fa-bars"
+              onClick={openSidebar}
+            ></div>
             <div id="search-btn" className="fas fa-search"></div>
             <div id="user-btn" className="fas fa-user"></div>
             <div id="toggle-btn" className="fas fa-sun"></div>
@@ -48,8 +55,8 @@ const Home = () => {
         </section>
       </header>
 
-      <div className="side-bar">
-        <div id="close-btn">
+      <div className={`side-bar ${!isSidebarOpen ? "closed" : ""}`}>
+        <div id="close-btn" onClick={closeSidebar}>
           <i className="fas fa-times"></i>
         </div>
 
@@ -85,9 +92,6 @@ const Home = () => {
           </Link>
         </nav>
       </div>
-
-      {/* Rest of your component remains unchanged */}
-      {/* ... */}
     </>
   );
 };

@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-// import "../css/style.css";
+
+import "../styles/Courses.css";
 
 const coursesData = [
   {
@@ -60,6 +61,10 @@ const coursesData = [
 ];
 
 const Courses = () => {
+  useEffect(() => {
+    document.body.classList.add("dark");
+    return () => document.body.classList.remove("dark");
+  }, []);
   return (
     <section className="courses">
       <h1 className="heading">our courses</h1>
