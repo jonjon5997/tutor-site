@@ -30,7 +30,7 @@ function Profile() {
           </div>
 
           <div className="profile">
-            <img src="/images/pic-1.jpg" className="image" alt="Profile" />
+            <img src="/images/pic-1.svg" className="image" alt="Profile" />
             <h3 className="name">shaikh anas</h3>
             <p className="role">student</p>
             <Link to="/profile" className="btn">
@@ -54,7 +54,7 @@ function Profile() {
         </div>
 
         <div className="profile">
-          <img src="/images/pic-1.jpg" className="image" alt="Profile" />
+          <img src="/images/pic-1.svg" className="image" alt="Profile" />
           <h3 className="name">shaikh anas</h3>
           <p className="role">student</p>
           <Link to="/profile" className="btn">
@@ -91,7 +91,7 @@ function Profile() {
 
         <div className="info">
           <div className="user">
-            <img src="/images/pic-1.jpg" alt="User" />
+            <img src="/images/pic-1.svg" alt="User" />
             <h3>shaikh anas</h3>
             <p>student</p>
             <Link to="/update" className="inline-btn">

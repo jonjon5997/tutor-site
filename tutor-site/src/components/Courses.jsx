@@ -54,7 +54,7 @@ const coursesData = [
   },
   {
     id: 9,
-    tutorImg: "pic-1.jpg",
+    tutorImg: "pic-1.svg",
     thumbImg: "thumb-9.png",
     title: "complete React tutorial",
   },

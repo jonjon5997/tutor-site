@@ -30,7 +30,7 @@ function Update() {
           </div>
 
           <div className="profile">
-            <img src="/images/pic-1.jpg" className="image" alt="Profile" />
+            <img src="/images/pic-1.svg" className="image" alt="Profile" />
             <h3 className="name">shaikh anas</h3>
             <p className="role">student</p>
             <a href="/profile" className="btn">
@@ -55,7 +55,7 @@ function Update() {
 
         <div className="profile">
           <img
-            src="/images/pic-1.jpg"
+            src="/images/pic-1.svg"
             className="image"
             alt="Sidebar Profile"
           />

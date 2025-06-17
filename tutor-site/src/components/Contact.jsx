@@ -41,7 +41,7 @@ const Contact = () => {
           </div>
 
           <div className="profile">
-            <img src="images/pic-1.jpg" className="image" alt="profile" />
+            <img src="images/pic-1.svg" className="image" alt="profile" />
             <h3 className="name">shaikh anas</h3>
             <p className="role">student</p>
             <a href="/profile" className="btn">
@@ -65,7 +65,7 @@ const Contact = () => {
         </div>
 
         <div className="profile">
-          <img src="images/pic-1.jpg" className="image" alt="profile" />
+          <img src="images/pic-1.svg" className="image" alt="profile" />
           <h3 className="name">shaikh anas</h3>
           <p className="role">student</p>
           <a href="/profile" className="btn">
@@ -100,7 +100,7 @@ const Contact = () => {
       <section className="contact">
         <div className="row">
           <div className="image">
-            <img src="images/contact-img.svg" alt="contact" />
+            <img className="image" src="images/contact-img.svg" alt="contact" />
           </div>
 
           <form onSubmit={handleFormSubmit}>

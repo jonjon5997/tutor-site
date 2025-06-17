@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/About.css";
 import { useSidebar } from "../context/SidebarContext"; // ⬅️ import hook
+// import profileImg from "../../public/images/pic-1.svg";
 
 const About = () => {
   const { isSidebarOpen, closeSidebar, openSidebar } = useSidebar(); // ⬅️ use it
@@ -32,7 +33,7 @@ const About = () => {
             <div id="toggle-btn" className="fas fa-sun"></div>
           </div>
           <div className="profile">
-            <img src="images/pic-1.jpg" className="image" alt="profile" />
+            <img src="/images/pic-1.svg" className="image" alt="profile" />
             <h3 className="name">shaikh anas</h3>
             <p className="role">student</p>
             <a href="/profile" className="btn">
@@ -55,7 +56,7 @@ const About = () => {
           <i className="fas fa-times"></i>
         </div>
         <div className="profile">
-          <img src="images/pic-1.jpg" className="image" alt="profile" />
+          <img src="images/pic-1.svg" className="image" alt="profile" />
           <h3 className="name">shaikh anas</h3>
           <p className="role">student</p>
           <a href="/profile" className="btn">

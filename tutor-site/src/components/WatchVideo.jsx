@@ -31,7 +31,7 @@ function WatchVideo() {
           </div>
 
           <div className="profile">
-            <img src="/images/pic-1.jpg" className="image" alt="profile" />
+            <img src="/images/pic-1.svg" className="image" alt="profile" />
             <h3 className="name">shaikh anas</h3>
             <p className="role">student</p>
             <Link to="/profile" className="btn">
@@ -55,7 +55,7 @@ function WatchVideo() {
         </div>
 
         <div className="profile">
-          <img src="/images/pic-1.jpg" className="image" alt="profile" />
+          <img src="/images/pic-1.svg" className="image" alt="profile" />
           <h3 className="name">shaikh anas</h3>
           <p className="role">student</p>
           <Link to="/profile" className="btn">

@@ -64,7 +64,7 @@ const Teachers = () => {
           </div>
 
           <div className="profile">
-            <img src="images/pic-1.jpg" className="image" alt="" />
+            <img src="images/pic-1.svg" className="image" alt="" />
             <h3 className="name">Jonathan Sanfilippo</h3>
             <p className="role">Student</p>
             <a href="/profile" className="btn">
@@ -88,7 +88,7 @@ const Teachers = () => {
         </div>
 
         <div className="profile">
-          <img src="images/pic-1.jpg" className="image" alt="" />
+          <img src="images/pic-1.svg" className="image" alt="" />
           <h3 className="name">Jonathan Sanfilippo</h3>
           <p className="role">Student</p>
           <a href="/profile" className="btn">
