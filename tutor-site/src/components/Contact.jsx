@@ -1,7 +1,9 @@
 import React from "react";
 import "../styles/Contact.css"; // Make sure this path is correct in your project
+import { useSidebar } from "../context/SidebarContext"; // ⬅️ import hook
 
 const Contact = () => {
+  const { isSidebarOpen, closeSidebar, openSidebar } = useSidebar(); // ⬅️ use it
   const handleFormSubmit = (e) => {
     e.preventDefault();
     // Add your form submission logic here
@@ -28,7 +30,11 @@ const Contact = () => {
           </form>
 
           <div className="icons">
-            <div id="menu-btn" className="fas fa-bars"></div>
+            <div
+              id="menu-btn"
+              className="fas fa-bars"
+              onClick={openSidebar}
+            ></div>
             <div id="search-btn" className="fas fa-search"></div>
             <div id="user-btn" className="fas fa-user"></div>
             <div id="toggle-btn" className="fas fa-sun"></div>
@@ -53,8 +59,8 @@ const Contact = () => {
         </section>
       </header>
 
-      <div className="side-bar">
-        <div id="close-btn">
+      <div className={`side-bar ${!isSidebarOpen ? "closed" : ""}`}>
+        <div id="close-btn" onClick={closeSidebar}>
           <i className="fas fa-times"></i>
         </div>
 

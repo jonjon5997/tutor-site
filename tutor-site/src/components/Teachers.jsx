@@ -13,6 +13,7 @@ import {
   faChalkboardUser,
   faHeadset,
 } from "@fortawesome/free-solid-svg-icons";
+import { useSidebar } from "../context/SidebarContext"; // ⬅️ import hook
 
 const teachersData = [
   { img: "images/pic-2.jpg", name: "john deo", role: "developer" },
@@ -25,6 +26,7 @@ const teachersData = [
 ];
 
 const Teachers = () => {
+  const { isSidebarOpen, closeSidebar, openSidebar } = useSidebar(); // ⬅️ use it
   return (
     <>
       <header className="header">
@@ -47,7 +49,7 @@ const Teachers = () => {
           </form>
 
           <div className="icons">
-            <div id="menu-btn">
+            <div id="menu-btn" onClick={openSidebar}>
               <FontAwesomeIcon icon={faBars} />
             </div>
             <div id="search-btn">
@@ -80,8 +82,8 @@ const Teachers = () => {
         </section>
       </header>
 
-      <div className="side-bar">
-        <div id="close-btn">
+      <div className={`side-bar ${!isSidebarOpen ? "closed" : ""}`}>
+        <div id="close-btn" onClick={closeSidebar}>
           <FontAwesomeIcon icon={faTimes} />
         </div>
 
