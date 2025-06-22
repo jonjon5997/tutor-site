@@ -1,8 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-// import "../assets/style.css"; // Adjust the path if needed
+import "../styles/Profile.css"; // Adjust the path if needed
+import { useSidebar } from "../context/SidebarContext"; // ⬅️ import hook
 
 function Profile() {
+  const { isSidebarOpen, closeSidebar, openSidebar } = useSidebar();
   return (
     <>
       <header className="header">
@@ -23,7 +25,11 @@ function Profile() {
           </form>
 
           <div className="icons">
-            <div id="menu-btn" className="fas fa-bars"></div>
+            <div
+              id="menu-btn"
+              className="fas fa-bars"
+              onClick={openSidebar}
+            ></div>
             <div id="search-btn" className="fas fa-search"></div>
             <div id="user-btn" className="fas fa-user"></div>
             <div id="toggle-btn" className="fas fa-sun"></div>
@@ -34,22 +40,22 @@ function Profile() {
             <h3 className="name">shaikh anas</h3>
             <p className="role">student</p>
             <Link to="/profile" className="btn">
-              view profile
+              View profile
             </Link>
             <div className="flex-btn">
               <Link to="/login" className="option-btn">
-                login
+                Login
               </Link>
               <Link to="/register" className="option-btn">
-                register
+                Register
               </Link>
             </div>
           </div>
         </section>
       </header>
 
-      <aside className="side-bar">
-        <div id="close-btn">
+      <aside className={`side-bar ${!isSidebarOpen ? "closed" : ""}`}>
+        <div id="close-btn" onClick={closeSidebar}>
           <i className="fas fa-times"></i>
         </div>
 
@@ -58,7 +64,7 @@ function Profile() {
           <h3 className="name">shaikh anas</h3>
           <p className="role">student</p>
           <Link to="/profile" className="btn">
-            view profile
+            View profile
           </Link>
         </div>
 
@@ -95,7 +101,7 @@ function Profile() {
             <h3>shaikh anas</h3>
             <p>student</p>
             <Link to="/update" className="inline-btn">
-              update profile
+              Update profile
             </Link>
           </div>
 
@@ -122,7 +128,7 @@ function Profile() {
                 </div>
               </div>
               <Link to="#" className="inline-btn">
-                view liked
+                View liked
               </Link>
             </div>
 
@@ -131,7 +137,7 @@ function Profile() {
                 <i className="fas fa-comment"></i>
                 <div>
                   <span>12</span>
-                  <p>videos comments</p>
+                  <p>Videos comments</p>
                 </div>
               </div>
               <Link to="#" className="inline-btn">
